@@ -2,7 +2,7 @@
   "targets": [
     {
       "name": "Mods (einzelne Downloads)",
-      "directory": "~/.minecraft/mods",
+      "directory": "c:/users/danny/appdata/roaming/.minecraft/mods",
       "urls": [
         "https://cdn.modrinth.com/data/LOpKHB2A/versions/FHxw949T/waystones-fabric-26.3-26.3.0.2.jar?mr_download_reason=standalone&mr_game_version=26.3&mr_loader=fabric",
         "https://cdn.modrinth.com/data/P7dR8mSH/versions/nJlcvFfj/fabric-api-0.165.2%2B26.3.jar?mr_download_reason=standalone&mr_game_version=26.3&mr_loader=fabric",
@@ -79,14 +79,14 @@
     },
     {
       "name": "Shaders (einzelne Downloads)",
-      "directory": "~/.minecraft/shaderpacks",
+      "directory": "c:/users/danny/appdata/roaming/.minecraft/shaderpacks",
       "urls": [
         "https://cdn.modrinth.com/data/HVnmMxH1/versions/Bqen1mJX/ComplementaryReimagined_r5.9.3.zip?mr_download_reason=standalone&mr_game_version=26.3&mr_loader=iris"
       ]
     },
     {
       "name": "Ressourcenpakete (einzelne Downloads)",
-      "directory": "~/.minecraft/resourcepacks",
+      "directory": "c:/users/danny/appdata/roaming/.minecraft/resourcepacks",
       "urls": [
         {
           "url": "https://cdn.modrinth.com/data/8bf2GogI/versions/UBuTOpY1/%C2%A76%C2%A7lVanilla%20Experience%2B%C2%A70.zip?mr_download_reason=standalone&mr_game_version=26.3&mr_loader=minecraft",
