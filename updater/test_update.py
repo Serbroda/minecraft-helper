@@ -89,6 +89,39 @@ class UpdaterTests(unittest.TestCase):
         self.assertEqual(plan[0]["source"].read_bytes(), b"zip mod")
         self.assertFalse(self.target.exists())
 
+    def test_duplicate_urls_are_downloaded_and_planned_once(self):
+        url = self.url + "/mod.jar"
+        config = self.config(urls=[
+            url,
+            {"url": url, "filename": "other.jar"},
+            url,
+            {"url": url},
+            {"url": url, "filename": "mod.jar"},
+            {"url": url, "filename": "MOD.jar"},
+        ])
+        config["targets"].append({"directory": "mods", "urls": [url]})
+        with patch.object(update, "download", wraps=update.download) as download:
+            plan = self.prepare(config)
+        self.assertEqual(download.call_count, 2)
+        self.assertEqual([p["destination"] for p in plan],
+                         [self.target / "mod.jar", self.target / "other.jar"])
+        self.assertFalse(self.target.exists())
+
+    def test_same_url_in_different_directories_is_kept(self):
+        url = self.url + "/mod.jar"
+        config = self.config(urls=[url])
+        config["targets"].append({"directory": "other", "urls": [url]})
+        plan = self.prepare(config)
+        self.assertEqual([p["destination"] for p in plan],
+                         [self.target / "mod.jar", self.base / "other/mod.jar"])
+
+    def test_different_urls_for_same_destination_still_rejected(self):
+        with self.assertRaises(update.UpdateError):
+            self.prepare(self.config(urls=[
+                self.url + "/mod.jar",
+                self.url + "/mod.jar?download=1",
+            ]))
+
     def test_local_zip_all_files_and_multiple_targets(self):
         archive = self.base / "local.zip"
         with zipfile.ZipFile(archive, "w") as bundle:
@@ -160,7 +193,7 @@ class UpdaterTests(unittest.TestCase):
         with self.assertRaises(update.UpdateError):
             self.prepare(self.config(urls=[
                 {"url": self.url + "/mod.jar", "filename": "a.jar"},
-                {"url": self.url + "/mod.jar", "filename": "A.jar"},
+                {"url": self.url + "/mod.jar?download=1", "filename": "A.jar"},
             ]))
 
     def test_edit_after_preview_rejected(self):

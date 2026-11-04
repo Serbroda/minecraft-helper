@@ -43,6 +43,15 @@ z. B. `unterordner/datei.jar`. Nutze **direkte Download-URLs**, keine Webseiten
 mit Download-Button. Weiterleitungen werden unterstützt; interaktive Anmeldung
 und API-Authentifizierung nicht.
 
+Doppelte Einträge mit exakt derselben URL und demselben Zielpfad werden
+automatisch übersprungen: Nur der erste Eintrag wird heruntergeladen und in der
+Vorschau aufgeführt. Das gilt auch über mehrere Ziele hinweg und bei einer Mischung
+aus einfachen URL-Zeichenketten und Objekten mit `url`/`filename`. Dieselbe URL mit
+unterschiedlichen Zielpfaden bleibt erhalten. Unterschiedliche URLs für denselben
+Zielpfad führen weiterhin zu einem Fehler; URL-Parameter gehören zur URL.
+Wie bei der Konfliktprüfung werden Zielpfade ohne Unterscheidung von Groß- und
+Kleinschreibung verglichen.
+
 **ZIP-Datei, lokal oder als Download:**
 
 ```json

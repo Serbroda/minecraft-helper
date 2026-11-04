@@ -113,6 +113,7 @@ def prepare(config, base, staging):
     """Fetch everything before touching any destination; return a change plan."""
     plan = []
     destinations = set()
+    seen_urls = set()
 
     def add(source, root, relative, label):
         destination = root / relative
@@ -149,6 +150,12 @@ def prepare(config, base, staging):
                 else:
                     raise UpdateError(f"{label}: Ungültiger URL-Eintrag.")
                 relative = relative_path(name)
+                # Keep distinct destinations, but ignore repeated URL/file pairs
+                # across all targets (including string/object representations).
+                key = (url, str(root / relative).casefold())
+                if key in seen_urls:
+                    continue
+                seen_urls.add(key)
                 source = work / str(number)
                 download(url, source)
                 add(source, root, relative, label)
