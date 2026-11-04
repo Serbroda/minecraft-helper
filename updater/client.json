@@ -1,0 +1,11 @@
+{
+  "targets": [
+    {
+      "name": "Mods (einzelne Downloads)",
+      "directory": "./mods",
+      "urls": [
+        "https://cdn.modrinth.com/data/LOpKHB2A/versions/FHxw949T/waystones-fabric-26.3-26.3.0.2.jar?mr_download_reason=standalone&mr_game_version=26.3&mr_loader=fabric"
+      ]
+    }
+  ]
+}
