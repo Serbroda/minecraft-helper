@@ -2,9 +2,81 @@
   "targets": [
     {
       "name": "Mods (einzelne Downloads)",
-      "directory": "./mods",
+      "directory": "~/.minecraft/mods",
       "urls": [
-        "https://cdn.modrinth.com/data/LOpKHB2A/versions/FHxw949T/waystones-fabric-26.3-26.3.0.2.jar?mr_download_reason=standalone&mr_game_version=26.3&mr_loader=fabric"
+        "https://cdn.modrinth.com/data/LOpKHB2A/versions/FHxw949T/waystones-fabric-26.3-26.3.0.2.jar?mr_download_reason=standalone&mr_game_version=26.3&mr_loader=fabric",
+        "https://cdn.modrinth.com/data/P7dR8mSH/versions/nJlcvFfj/fabric-api-0.165.2%2B26.3.jar?mr_download_reason=standalone&mr_game_version=26.3&mr_loader=fabric",
+        "https://cdn.modrinth.com/data/bi4iCmsw/versions/9gkJoFhj/shogi-fabric-26.3-26.3.0.3.jar?mr_download_reason=standalone&mr_game_version=26.3&mr_loader=fabric",
+        "https://cdn.modrinth.com/data/MBAkmtvl/versions/MYj31XNG/balm-fabric-26.3-26.3.0.3.jar?mr_download_reason=standalone&mr_game_version=26.3&mr_loader=fabric",
+
+        "https://cdn.modrinth.com/data/O7RBXm3n/versions/y8vT21Sb/InventoryProfilesNext-fabric-26.3-2.3.8.jar?mr_download_reason=standalone&mr_game_version=26.3&mr_loader=fabric",
+        "https://cdn.modrinth.com/data/Ha28R6CL/versions/SKW1BTL3/fabric-language-kotlin-1.14.2%2Bkotlin.2.4.21.jar?mr_download_reason=standalone&mr_game_version=26.3&mr_loader=fabric",
+        "https://cdn.modrinth.com/data/P7dR8mSH/versions/nJlcvFfj/fabric-api-0.165.2%2B26.3.jar?mr_download_reason=standalone&mr_game_version=26.3&mr_loader=fabric",
+        "https://cdn.modrinth.com/data/onSQdWhM/versions/aKBFonyQ/libIPN-fabric-26.3-6.9.0.jar?mr_download_reason=standalone&mr_game_version=26.3&mr_loader=fabric",
+
+        "https://cdn.modrinth.com/data/DOUdJVEm/versions/fo76vL20/controlify-3.5.3%2Bmc26.3-universal.jar?mr_download_reason=standalone&mr_game_version=26.3&mr_loader=fabric",
+        "https://cdn.modrinth.com/data/1eAoo2KR/versions/s9SjoFu1/yet_another_config_lib_v3-3.9.7%2B26.3-fabric.jar?mr_download_reason=standalone&mr_game_version=26.3&mr_loader=fabric",
+        "https://cdn.modrinth.com/data/P7dR8mSH/versions/nJlcvFfj/fabric-api-0.165.2%2B26.3.jar?mr_download_reason=standalone&mr_game_version=26.3&mr_loader=fabric",
+
+        "https://cdn.modrinth.com/data/joEfVgkn/versions/d0jTyKNs/carryon-fabric-26.3-2.12.1.jar?mr_download_reason=standalone&mr_game_version=26.3&mr_loader=fabric",
+        "https://cdn.modrinth.com/data/P7dR8mSH/versions/nJlcvFfj/fabric-api-0.165.2%2B26.3.jar?mr_download_reason=standalone&mr_game_version=26.3&mr_loader=fabric",
+
+        "https://cdn.modrinth.com/data/1bokaNcj/versions/MfxfgXaO/xaerominimap-fabric-26.3-26.6.2.jar?mr_download_reason=standalone&mr_game_version=26.3&mr_loader=fabric",
+        "https://cdn.modrinth.com/data/P7dR8mSH/versions/nJlcvFfj/fabric-api-0.165.2%2B26.3.jar?mr_download_reason=standalone&mr_game_version=26.3&mr_loader=fabric",
+
+        "https://cdn.modrinth.com/data/NcUtCpym/versions/VM8lNSSM/xaeroworldmap-fabric-26.3-1.47.2.jar?mr_download_reason=standalone&mr_game_version=26.3&mr_loader=fabric",
+        "https://cdn.modrinth.com/data/P7dR8mSH/versions/nJlcvFfj/fabric-api-0.165.2%2B26.3.jar?mr_download_reason=standalone&mr_game_version=26.3&mr_loader=fabric",
+
+        "https://cdn.modrinth.com/data/YL57xq9U/versions/vTN4NRGW/iris-fabric-1.11.7%2Bmc26.3.jar?mr_download_reason=standalone&mr_game_version=26.3&mr_loader=fabric",
+        "https://cdn.modrinth.com/data/AANobbMI/versions/bAZQdGpg/sodium-fabric-0.9.2%2Bmc26.3.jar?mr_download_reason=standalone&mr_game_version=26.3&mr_loader=fabric",
+
+        "https://cdn.modrinth.com/data/nvQzSEkH/versions/71CTWqdE/Jade-mc26.3-Fabric-26.3.5.jar?mr_download_reason=standalone&mr_game_version=26.3&mr_loader=fabric",
+        "https://cdn.modrinth.com/data/P7dR8mSH/versions/nJlcvFfj/fabric-api-0.165.2%2B26.3.jar?mr_download_reason=standalone&mr_game_version=26.3&mr_loader=fabric",
+
+        "https://cdn.modrinth.com/data/Cnejf5xM/versions/MTui9kST/rightclickharvest-fabric-4.6.2%2B26.3.x.jar?mr_download_reason=standalone&mr_game_version=26.3&mr_loader=fabric",
+        "https://cdn.modrinth.com/data/IYY9Siz8/versions/EbhilCj8/jamlib-fabric-2.3.1%2B26.3.x.jar?mr_download_reason=standalone&mr_game_version=26.3&mr_loader=fabric",
+        "https://cdn.modrinth.com/data/P7dR8mSH/versions/nJlcvFfj/fabric-api-0.165.2%2B26.3.jar?mr_download_reason=standalone&mr_game_version=26.3&mr_loader=fabric",
+
+        "https://cdn.modrinth.com/data/x02cBj9Y/versions/aAXJqboy/status-effect-bars-1.0.12.jar?mr_download_reason=standalone&mr_game_version=26.3&mr_loader=fabric",
+
+        "https://cdn.modrinth.com/data/fM515JnW/versions/LFUkYKC1/AmbientSounds_FABRIC_v6.3.11_mc26.3.jar?mr_download_reason=standalone&mr_game_version=26.3&mr_loader=fabric",
+        "https://cdn.modrinth.com/data/P7dR8mSH/versions/nJlcvFfj/fabric-api-0.165.2%2B26.3.jar?mr_download_reason=standalone&mr_game_version=26.3&mr_loader=fabric",
+        "https://cdn.modrinth.com/data/OsZiaDHq/versions/7YUEsxpw/CreativeCore_FABRIC_v2.14.24_mc26.3.jar?mr_download_reason=standalone&mr_game_version=26.3&mr_loader=fabric",
+
+        "https://cdn.modrinth.com/data/mOgUt4GM/versions/kyy7dbrZ/modmenu-21.0.0.jar?mr_download_reason=standalone&mr_game_version=26.3&mr_loader=fabric",
+        "https://cdn.modrinth.com/data/P7dR8mSH/versions/nJlcvFfj/fabric-api-0.165.2%2B26.3.jar?mr_download_reason=standalone&mr_game_version=26.3&mr_loader=fabric",
+        "https://cdn.modrinth.com/data/eXts2L7r/versions/lXytLqWj/placeholder-api-3.2.0%2B26.3.jar?mr_download_reason=standalone&mr_game_version=26.3&mr_loader=fabric",
+
+        "https://cdn.modrinth.com/data/wWiJfmyy/versions/hsHgcDdb/pickupnotifications-fabric-3.0.1%2B26.3.jar?mr_download_reason=standalone&mr_game_version=26.3&mr_loader=fabric",
+        "https://cdn.modrinth.com/data/P7dR8mSH/versions/nJlcvFfj/fabric-api-0.165.2%2B26.3.jar?mr_download_reason=standalone&mr_game_version=26.3&mr_loader=fabric",
+
+        "https://cdn.modrinth.com/data/vRYk0bv7/versions/q7WqRzFd/trashslot-fabric-26.3-26.3.0.2.jar?mr_download_reason=standalone&mr_game_version=26.3&mr_loader=fabric",
+        "https://cdn.modrinth.com/data/MBAkmtvl/versions/MYj31XNG/balm-fabric-26.3-26.3.0.3.jar?mr_download_reason=standalone&mr_game_version=26.3&mr_loader=fabric",
+        "https://cdn.modrinth.com/data/P7dR8mSH/versions/nJlcvFfj/fabric-api-0.165.2%2B26.3.jar?mr_download_reason=standalone&mr_game_version=26.3&mr_loader=fabric",
+
+        "https://cdn.modrinth.com/data/u6dRKJwZ/versions/Zebwcvua/jei-26.3-fabric-31.14.0.72.jar?mr_download_reason=standalone&mr_game_version=26.3&mr_loader=fabric",
+        "https://cdn.modrinth.com/data/7tEfOcA7/versions/kWsxPwbN/mezz_config-26.3-fabric-0.6.10.jar?mr_download_reason=standalone&mr_game_version=26.3&mr_loader=fabric",
+        "https://cdn.modrinth.com/data/P7dR8mSH/versions/nJlcvFfj/fabric-api-0.165.2%2B26.3.jar?mr_download_reason=standalone&mr_game_version=26.3&mr_loader=fabric",
+
+        "https://cdn.modrinth.com/data/Fb4jn8m6/versions/D0B62UJ5/FallingTree-26.3-25.jar?mr_download_reason=standalone&mr_game_version=26.3&mr_loader=fabric",
+
+        "https://cdn.modrinth.com/data/9s6osm5g/versions/fg2uyxOW/cloth-config-fabric-26.3.159.jar?mr_download_reason=standalone&mr_game_version=26.3&mr_loader=fabric"
+      ]
+    },
+    {
+      "name": "Shaders (einzelne Downloads)",
+      "directory": "~/.minecraft/shaderpacks",
+      "urls": [
+        "https://cdn.modrinth.com/data/HVnmMxH1/versions/Bqen1mJX/ComplementaryReimagined_r5.9.3.zip?mr_download_reason=standalone&mr_game_version=26.3&mr_loader=iris"
+      ]
+    },
+    {
+      "name": "Ressourcenpakete (einzelne Downloads)",
+      "directory": "~/.minecraft/resourcepacks",
+      "urls": [
+        "https://cdn.modrinth.com/data/8bf2GogI/versions/UBuTOpY1/%C2%A76%C2%A7lVanilla%20Experience%2B%C2%A70.zip?mr_download_reason=standalone&mr_game_version=26.3&mr_loader=minecraft",
+
+        "https://cdn.modrinth.com/data/6gN7YVi7/versions/6JpG9oNx/Re-covered.zip?mr_download_reason=standalone&mr_game_version=26.3&mr_loader=minecraft"
       ]
     }
   ]
