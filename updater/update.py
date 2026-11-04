@@ -15,6 +15,9 @@ import tempfile
 from urllib.parse import unquote, urlsplit
 from urllib.request import Request, urlopen
 import zipfile
+import truststore
+
+truststore.inject_into_ssl()
 
 
 # Limits apply to each download and to the total extracted content of each ZIP.
