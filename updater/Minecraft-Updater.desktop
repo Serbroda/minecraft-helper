@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+Name=Minecraft-Updater
+Comment=Mods, Shader und Ressourcenpakete aktualisieren
+Exec=/home/deck/minecraft-updater/update.sh
+Terminal=true
+Categories=Game;

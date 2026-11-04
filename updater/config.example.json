@@ -1,0 +1,27 @@
+{
+  "targets": [
+    {
+      "name": "Mods (einzelne Downloads)",
+      "directory": "~/.minecraft/mods",
+      "urls": [
+        "https://example.com/downloads/beispiel-mod.jar",
+        {
+          "url": "https://example.com/api/download?id=123",
+          "filename": "weiterer-mod.jar"
+        }
+      ]
+    },
+    {
+      "name": "Shader (ZIP-Download)",
+      "directory": "~/.minecraft/shaderpacks",
+      "zip": "https://example.com/client-paket.zip",
+      "zip_prefix": "shaderpacks"
+    },
+    {
+      "name": "Ressourcenpakete (lokale ZIP)",
+      "directory": "~/.minecraft/resourcepacks",
+      "zip": "client-paket.zip",
+      "zip_prefix": "resourcepacks"
+    }
+  ]
+}
