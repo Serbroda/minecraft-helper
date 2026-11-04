@@ -139,6 +139,23 @@ unter Windows eine Verknüpfung auf `update.bat` mit dem Argument `-y` anlegen;
 unter Linux in der Desktop-Datei `Exec=/home/deck/minecraft-updater/update.sh -y`
 setzen. Auch dann bleibt die Ergebnisanzeige bis Enter/Tastendruck sichtbar.
 
+### Automatische Aktualisierung der Starter
+
+`update.bat` und `update.sh` führen vor dem Python-Aufruf ein `git pull --ff-only`
+im Repository des Starters aus. Dafür muss das Projekt per Git geklont sein, Git
+installiert sein und der aktuelle Branch einen erreichbaren Upstream haben.
+Dabei werden auch versionierte Konfigurationen aktualisiert. Nur ein
+vertrauenswürdiges Repository verwenden: Der anschließend ausgeführte Python-Code
+kann durch den Pull geändert werden.
+
+Bei einem Pull-Fehler (z. B. offline, Konflikte mit lokalen Änderungen oder
+auseinandergelaufene Branches) wird der Updater **nicht gestartet**. Es gibt weder
+automatische Merge-Commits noch Stash/Reset; lokale Änderungen werden nicht
+zwangsweise überschrieben. Git-Fehler beheben und erneut starten.
+Ohne installiertes Git oder bei einer Ordnerkopie ohne Repository erscheint ein
+Hinweis und der Updater startet wie bisher ohne Pull. Der direkte Aufruf von
+`update.py` führt ebenfalls keinen Pull aus.
+
 ## Verhalten und Sicherheit
 
 - Alle Quellen werden zuerst in einen temporären Ordner heruntergeladen/entpackt.
@@ -168,8 +185,10 @@ Im Ordner dieses Updaters, ohne externe Dienste oder zusätzliche Pakete:
 
 ```sh
 python3 -m unittest -v
-python3 -m py_compile update.py test_update.py
+python3 -m py_compile update.py test_update.py test_starters.py
 sh -n update.sh
 ```
 
-Die Tests verwenden einen lokalen HTTP-Server und temporäre Zielordner.
+Die Tests verwenden einen lokalen HTTP-Server und temporäre Zielordner. Die
+Shell-Startertests simulieren Git und Python, ohne Pulls oder echte Updates
+auszuführen; unter Windows werden diese POSIX-Tests übersprungen.
