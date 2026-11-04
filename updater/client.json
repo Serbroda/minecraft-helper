@@ -74,7 +74,10 @@
       "name": "Ressourcenpakete (einzelne Downloads)",
       "directory": "~/.minecraft/resourcepacks",
       "urls": [
-        "https://cdn.modrinth.com/data/8bf2GogI/versions/UBuTOpY1/%C2%A76%C2%A7lVanilla%20Experience%2B%C2%A70.zip?mr_download_reason=standalone&mr_game_version=26.3&mr_loader=minecraft",
+        {
+          "url": "https://cdn.modrinth.com/data/8bf2GogI/versions/UBuTOpY1/%C2%A76%C2%A7lVanilla%20Experience%2B%C2%A70.zip?mr_download_reason=standalone&mr_game_version=26.3&mr_loader=minecraft",
+          "filename": "Minecraft-Vanilla-Experience-Plus-26.3.zip"
+        },
 
         "https://cdn.modrinth.com/data/6gN7YVi7/versions/6JpG9oNx/Re-covered.zip?mr_download_reason=standalone&mr_game_version=26.3&mr_loader=minecraft"
       ]
